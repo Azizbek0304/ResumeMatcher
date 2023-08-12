@@ -1,20 +1,24 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
-import TryIt from './components/TryIt';
-import HowTo from './components/HowTo';
-import WhyChoose from './components/WhyChoose';
+import Pricing from './components/Pricing';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+// import TryIt from './components/TryIt';
+// import HowTo from './components/HowTo';
+// import WhyChoose from './components/WhyChoose';
 import './style.css';
 
 export default function App() {
-  const [isNightMode, setIsNightMode] = useState(false);
+  const theme = createTheme();
+  const [isNightMode, setIsNightMode] = useState(true);
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Header isNightMode={isNightMode} setIsNightMode={setIsNightMode} />
       <main>
-        <TryIt isNightMode={isNightMode} />
+        {/* <TryIt isNightMode={isNightMode} />
         <WhyChoose isNightMode={isNightMode} />
-        <HowTo isNightMode={isNightMode} />
+        <HowTo isNightMode={isNightMode} /> */}
+        <Pricing isNightMode={isNightMode} />
       </main>
-    </>
+    </ThemeProvider>
   );
 }
