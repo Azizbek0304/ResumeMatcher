@@ -1,0 +1,66 @@
+/* Rest of your CSS styles */
+
+.how-to {
+  background-color: #f7f7f7;
+  padding: 80px 0;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.light-mode .how-to {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.night-mode .how-to {
+  background-color: #292b2c;
+  color: #fff;
+}
+
+.how-to-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.how-to h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.how-to-steps {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.how-to-step {
+  flex-basis: calc(25% - 40px);
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-number {
+  font-size: 32px;
+  color: #f44336;
+  margin-bottom: 10px;
+}
+
+.how-to-step h2 {
+  font-size: 18px;
+  color: inherit;
+}
+
+.how-to-step:hover {
+  background-color: #e0e0e0;
+  transition: background-color 0.3s ease;
+}
+
+.night-mode .how-to-step {
+  background-color: #333;
+}
