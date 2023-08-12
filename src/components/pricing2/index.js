@@ -5,19 +5,19 @@ const PricingCard = () => {
   const pricingData = [
     {
       title: 'Use Once',
-      price: 1.99,
+      price: 1,
       period: 'each',
       features: ['take a credit for one useage'],
     },
     {
       title: 'Monthly',
-      price: 19.99,
+      price: 19,
       period: 'mo',
       features: ['One month unlimited usage'],
     },
     {
       title: 'Yearly',
-      price: 39.99,
+      price: 39,
       period: 'ye',
       features: ['One Year unlimited usage'],
     },
@@ -61,7 +61,7 @@ const PricingCard = () => {
                       <span className="sign">$</span>
                       <span className="currency">{item.price}</span>
                       <span className="cent">.99</span>
-                      <span className="month">/MON</span>
+                      <span className="month">/{item.period}</span>
                     </span>
                   </div>
                   {/* //PRICE END */}
