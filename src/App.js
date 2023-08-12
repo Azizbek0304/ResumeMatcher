@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
 import Pricing from './components/Pricing';
+import PricingCard from './components/pricing2';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 // import TryIt from './components/TryIt';
 // import HowTo from './components/HowTo';
@@ -18,6 +19,7 @@ export default function App() {
         <WhyChoose isNightMode={isNightMode} />
         <HowTo isNightMode={isNightMode} /> */}
         <Pricing isNightMode={isNightMode} />
+        <PricingCard isNightMode={isNightMode} />
       </main>
     </ThemeProvider>
   );
