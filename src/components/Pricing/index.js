@@ -3,19 +3,22 @@ import './pricing.scss';
 
 const pricingItems = [
   {
-    title: 'Freelance',
-    price: 29,
-    features: ['1 GB of space', 'Support at $25/hour', 'Limited cloud access'],
+    title: 'Use Once',
+    price: 1.99,
+    period: 'each',
+    features: ['take a credit for one useage'],
   },
   {
-    title: 'Business',
-    price: 59,
-    features: ['5 GB of space', 'Support at $5/hour', 'Full cloud access'],
+    title: 'Monthly',
+    price: 19.99,
+    period: 'mo',
+    features: ['One month unlimited usage'],
   },
   {
-    title: 'Enterprise',
-    price: 99,
-    features: ['10 GB of space', 'Support at $5/hour', 'Full cloud access'],
+    title: 'Yearly',
+    price: 39.99,
+    period: 'ye',
+    features: ['One Year unlimited usage'],
   },
 ];
 
@@ -68,14 +71,14 @@ function Pricing() {
               <div className="pricing-price">
                 <span className="pricing-currency">$</span>
                 {item.price}
-                <span className="pricing-period">/ mo</span>
+                <span className="pricing-period">/{item.period}</span>
               </div>
               <h3 className="pricing-title">{item.title}</h3>
             </div>
             <ul className="pricing-feature-list">
               {item.features.map((feature, featureIndex) => (
                 <li className="pricing-feature" key={featureIndex}>
-                  {feature}
+                  - {feature}
                 </li>
               ))}
             </ul>

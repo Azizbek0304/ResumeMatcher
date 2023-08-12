@@ -18,7 +18,7 @@ section {
   -webkit-justify-content: center;
   justify-content: center;
   width: 100%;
-  margin: 0 auto 3em !important;
+  margin: 0 auto 3em;
   &-item {
     position: relative;
     display: -webkit-flex;
@@ -52,7 +52,7 @@ section {
   background: #fff;
   box-shadow: 0 0 10px rgba(46, 59, 125, 0.23);
   border-radius: 20px 20px 10px 10px;
-  margin: 1em;
+  margin: 1em !important;
 }
 
 @media screen and (min-width: 66.25em) {
@@ -143,12 +143,12 @@ section {
     padding: 1em 2em;
     color: #fff;
     border-radius: 30px;
-    background: #4d4766;
+    background: #333;
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
     &:hover,
     &:focus {
-      background-color: #100a13;
+      background-color: rgb(24, 24, 24);
     }
   }
 }
