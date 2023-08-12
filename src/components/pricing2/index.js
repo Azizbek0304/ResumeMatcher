@@ -81,7 +81,7 @@ const PricingCard = () => {
                 {/* BUTTON START */}
                 <div className="generic_price_btn clearfix">
                   <a className="" href="">
-                    Sign up
+                    Choose plan
                   </a>
                 </div>
                 {/* //BUTTON END */}
