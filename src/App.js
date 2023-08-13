@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
 import Pricing from './components/Pricing';
+import Cards from './components/Cards';
 import PricingCard from './components/pricing2';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 // import TryIt from './components/TryIt';
@@ -13,13 +14,14 @@ export default function App() {
   const [isNightMode, setIsNightMode] = useState(true);
   return (
     <ThemeProvider theme={theme}>
-      <Header isNightMode={isNightMode} setIsNightMode={setIsNightMode} />
+      {/* <Header isNightMode={isNightMode} setIsNightMode={setIsNightMode} /> */}
       <main>
         {/* <TryIt isNightMode={isNightMode} />
         <WhyChoose isNightMode={isNightMode} />
         <HowTo isNightMode={isNightMode} /> */}
-        <Pricing isNightMode={isNightMode} />
-        <PricingCard isNightMode={isNightMode} />
+        {/* <Pricing isNightMode={isNightMode} />
+        <PricingCard isNightMode={isNightMode} /> */}
+        <Cards />
       </main>
     </ThemeProvider>
   );
