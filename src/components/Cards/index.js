@@ -6,13 +6,13 @@ const cardsData = [
     title: 'Card 1',
     content:
       'This is a short piece of content.This is a very long piece of content that will need the smallest text size.This is a very long piece of content that will need the smallest text size.',
-    color: '#3498db', // Blue color
+    color: '#e74c3c', // Blue colore74c3c
   },
   {
     title: 'Card 2',
     content:
       'This is a longer piece of content that will require smaller text size.This is a longer piece of content that will require smaller text size.This is a very long piece of content that will need the smallest text size.This is a very long piece of content that will need the smallest text size.',
-    color: '#e74c3c', // Red color
+    color: '#3498db', // Red color
   },
   {
     title: 'Card 3',
