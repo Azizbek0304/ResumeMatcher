@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 // import Header from './components/Header';
 // import Pricing from './components/Pricing';
 import Sidebar from './components/Sidebar';
-import Cards from './components/Cards';
+// import Cards from './components/Cards';
 // import PricingCard from './components/pricing2';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 // import TryIt from './components/TryIt';
