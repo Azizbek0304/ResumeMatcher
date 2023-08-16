@@ -23,8 +23,7 @@ export default function App() {
         {/* <Pricing isNightMode={isNightMode} />
         <PricingCard isNightMode={isNightMode} /> */}
         <Sidebar />
-        <Cards />
-        
+        {/* <Cards /> */}
       </main>
     </ThemeProvider>
   );
