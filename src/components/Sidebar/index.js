@@ -7,6 +7,7 @@ import {
   ListItemText,
   Divider,
   IconButton,
+  Collapse,
 } from '@mui/material';
 import {
   Home as HomeIcon,
@@ -28,9 +29,12 @@ const Sidebar = () => {
     <Drawer
       variant="permanent"
       sx={{
-        width: 250,
+        width: open ? 250 : 70,
         flexShrink: 0,
-        [`& .MuiDrawer-paper`]: { width: 250, boxSizing: 'border-box' },
+        [`& .MuiDrawer-paper`]: {
+          width: open ? 250 : 70,
+          boxSizing: 'border-box',
+        },
       }}
     >
       <List>
@@ -38,23 +42,29 @@ const Sidebar = () => {
           <ListItemIcon>
             <HomeIcon />
           </ListItemIcon>
-          <ListItemText primary="Home" />
+          <Collapse in={open}>
+            <ListItemText primary="Home" />
+          </Collapse>
         </ListItem>
         <ListItem button>
           <ListItemIcon>
             <ContactsIcon />
           </ListItemIcon>
-          <ListItemText primary="Contact" />
+          <Collapse in={open}>
+            <ListItemText primary="Contact" />
+          </Collapse>
         </ListItem>
         <Divider />
         <ListItem button onClick={handleCollapse}>
           <ListItemIcon>
             <DashboardIcon />
           </ListItemIcon>
-          <ListItemText primary="General" />
+          <Collapse in={open}>
+            <ListItemText primary="General" />
+          </Collapse>
           {open ? <ExpandLessIcon /> : <ExpandMoreIcon />}
         </ListItem>
-        {open && (
+        <Collapse in={open}>
           <List sx={{ pl: 3 }}>
             <ListItem button>
               <ListItemText primary="Dashboard" />
@@ -63,13 +73,15 @@ const Sidebar = () => {
               <ListItemText primary="Analytics" />
             </ListItem>
           </List>
-        )}
+        </Collapse>
         <Divider />
         <ListItem button>
           <ListItemIcon>
             <MailOutlineIcon />
           </ListItemIcon>
-          <ListItemText primary="Email" />
+          <Collapse in={open}>
+            <ListItemText primary="Email" />
+          </Collapse>
         </ListItem>
       </List>
       <IconButton onClick={handleCollapse}>

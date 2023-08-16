@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import Header from './components/Header';
-import Pricing from './components/Pricing';
+// import Header from './components/Header';
+// import Pricing from './components/Pricing';
 import Sidebar from './components/Sidebar';
 import Cards from './components/Cards';
-import PricingCard from './components/pricing2';
+// import PricingCard from './components/pricing2';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 // import TryIt from './components/TryIt';
 // import HowTo from './components/HowTo';
